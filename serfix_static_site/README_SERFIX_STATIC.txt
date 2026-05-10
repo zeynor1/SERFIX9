@@ -1,7 +1,5 @@
 SERFIX Service Limited — GitHub Pages Ready
 
-This folder is ready for GitHub Pages.
-
 Recommended GitHub Pages settings:
 - Source: Deploy from a branch
 - Branch: main

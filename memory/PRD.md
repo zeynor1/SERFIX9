@@ -44,3 +44,10 @@
 - Rebuilt `/app/docs` and `/app/serfix_static_site`.
 - Repacked `/app/serfix_github_pages_ready.zip`.
 - Verified rendered site has no `Made with Emergent` text and no `#emergent-badge` element.
+
+
+## Hero Visual Update
+- Added Regina/Saskatchewan themed background image to the hero with dark/yellow overlay.
+- Increased hero poster/photo area to dominate the hero section while preserving full image information with `object-contain`.
+- Added hammer-logo image badge using the provided SERFIX logo reference and positioned it outside the poster so it does not cover important content.
+- Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.

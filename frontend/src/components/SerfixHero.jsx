@@ -11,11 +11,18 @@ const stats = [
 export const SerfixHero = () => {
   return (
     <section id="top" className="relative overflow-hidden bg-zinc-950 text-zinc-50" data-testid="hero-section">
+      <img
+        src={BRAND_IMAGES.regina}
+        alt="Regina Saskatchewan city background"
+        className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-luminosity"
+        data-testid="hero-regina-background-image"
+      />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(250,204,21,0.18),transparent_28%),linear-gradient(90deg,rgba(9,9,11,0.98)_0%,rgba(9,9,11,0.86)_38%,rgba(9,9,11,0.66)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(250,204,21,0.16)_0%,transparent_30%,transparent_72%,rgba(250,204,21,0.12)_100%)]" />
-      <div className="industrial-grid absolute inset-0 opacity-25" />
+      <div className="industrial-grid absolute inset-0 opacity-30" />
 
-      <div className="relative mx-auto grid min-h-[86vh] max-w-7xl grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 md:py-24 lg:grid-cols-12 lg:px-8">
-        <div className="animate-rise lg:col-span-6">
+      <div className="relative mx-auto grid min-h-[88vh] max-w-[1500px] grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 md:py-24 lg:grid-cols-12 lg:gap-10 lg:px-8 xl:px-10">
+        <div className="animate-rise lg:col-span-5">
           <div className="mb-7 inline-flex items-center gap-3 border-2 border-yellow-400 bg-zinc-900 px-4 py-3 text-xs font-bold uppercase tracking-[0.22em] text-yellow-300" data-testid="hero-location-badge">
             <MapPin className="h-4 w-4" strokeWidth={3} />
             Proudly serving {CONTACT.location}
@@ -25,7 +32,7 @@ export const SerfixHero = () => {
             Fixing the small stuff. <span className="block text-yellow-400">Making a big difference.</span>
           </h1>
 
-          <p className="mt-7 max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg" data-testid="hero-subheading">
+          <p className="mt-7 max-w-xl text-base leading-relaxed text-zinc-300 sm:text-lg" data-testid="hero-subheading">
             SERFIX Service Limited provides reliable handyman services for homes and businesses in Regina — appliance repair, drywall, painting, doors, fixtures, and general maintenance.
           </p>
 
@@ -67,13 +74,22 @@ export const SerfixHero = () => {
           </div>
         </div>
 
-        <div className="animate-rise-delay relative lg:col-span-6" data-testid="hero-visual-wrap">
-          <div className="absolute -left-4 -top-4 h-28 w-28 border-2 border-yellow-400 bg-yellow-400/20" />
-          <div className="relative border-2 border-yellow-400 bg-zinc-900 p-3 shadow-[16px_16px_0px_0px_rgba(250,204,21,0.22)]">
+        <div className="animate-rise-delay relative lg:col-span-7 lg:-mr-6 xl:-mr-10" data-testid="hero-visual-wrap">
+          <div className="absolute -left-5 -top-5 h-36 w-36 border-2 border-yellow-400 bg-yellow-400/20" />
+          <div className="absolute -right-4 -bottom-4 h-40 w-40 border-2 border-yellow-400 bg-zinc-950/80" />
+          <div className="relative border-2 border-yellow-400 bg-zinc-950/95 p-3 shadow-[18px_18px_0px_0px_rgba(250,204,21,0.23)]">
+            <div className="absolute -left-3 -top-16 z-20 hidden w-32 border-2 border-zinc-50 bg-zinc-950 p-2 shadow-[6px_6px_0px_0px_rgba(250,204,21,0.55)] sm:block lg:w-40" data-testid="hero-hammer-logo-badge">
+              <img
+                src={BRAND_IMAGES.logoPoster}
+                alt="SERFIX hammer logo mark"
+                className="aspect-[4/3] w-full object-contain"
+                data-testid="hero-hammer-logo-image"
+              />
+            </div>
             <img
               src={BRAND_IMAGES.servicePoster}
               alt="SERFIX Service Limited handyman services poster"
-              className="aspect-[16/10] w-full bg-zinc-950 object-contain object-center"
+              className="hero-poster-image w-full bg-zinc-950 object-contain object-center"
               data-testid="hero-brand-image"
             />
           </div>

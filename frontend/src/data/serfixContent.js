@@ -8,7 +8,7 @@ export const CONTACT = {
 
 export const BRAND_IMAGES = {
   logoPoster:
-    "https://customer-assets.emergentagent.com/job_0b269a77-77f3-496c-b7e4-c7505df97fed/artifacts/1ol3ja2w_image.png",
+    "https://customer-assets.emergentagent.com/job_firm-preview-2/artifacts/uwebhib0_image.png",
   servicePoster:
     "https://customer-assets.emergentagent.com/job_0b269a77-77f3-496c-b7e4-c7505df97fed/artifacts/y74mjjtg_image.png",
   tools:
