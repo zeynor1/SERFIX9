@@ -78,17 +78,9 @@ export const SerfixHero = () => {
           <div className="absolute -left-5 -top-5 h-36 w-36 border-2 border-yellow-400 bg-yellow-400/20" />
           <div className="absolute -right-4 -bottom-4 h-40 w-40 border-2 border-yellow-400 bg-zinc-950/80" />
           <div className="relative border-2 border-yellow-400 bg-zinc-950/95 p-3 shadow-[18px_18px_0px_0px_rgba(250,204,21,0.23)]">
-            <div className="absolute -left-3 -top-16 z-20 hidden w-32 border-2 border-zinc-50 bg-zinc-950 p-2 shadow-[6px_6px_0px_0px_rgba(250,204,21,0.55)] sm:block lg:w-40" data-testid="hero-hammer-logo-badge">
-              <img
-                src={BRAND_IMAGES.logoPoster}
-                alt="SERFIX hammer logo mark"
-                className="aspect-[4/3] w-full object-contain"
-                data-testid="hero-hammer-logo-image"
-              />
-            </div>
             <img
-              src={BRAND_IMAGES.servicePoster}
-              alt="SERFIX Service Limited handyman services poster"
+              src={BRAND_IMAGES.logoPoster}
+              alt="SERFIX Service Limited logo with hammer, Regina Saskatchewan"
               className="hero-poster-image w-full bg-zinc-950 object-contain object-center"
               data-testid="hero-brand-image"
             />

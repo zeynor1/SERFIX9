@@ -51,3 +51,10 @@
 - Increased hero poster/photo area to dominate the hero section while preserving full image information with `object-contain`.
 - Added hammer-logo image badge using the provided SERFIX logo reference and positioned it outside the poster so it does not cover important content.
 - Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
+
+
+## First Slide Image Update
+- Replaced the first-slide hero image with the SERFIX hammer/logo photo.
+- Kept the image large and fully visible using `object-contain`, preserving important text/details.
+- Removed the small added avatar/logo badge from the hero image.
+- Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
