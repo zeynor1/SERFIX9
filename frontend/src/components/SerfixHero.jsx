@@ -14,12 +14,12 @@ export const SerfixHero = () => {
       <img
         src={BRAND_IMAGES.regina}
         alt="Regina Saskatchewan city background"
-        className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-luminosity"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-55"
         data-testid="hero-regina-background-image"
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(250,204,21,0.18),transparent_28%),linear-gradient(90deg,rgba(9,9,11,0.98)_0%,rgba(9,9,11,0.86)_38%,rgba(9,9,11,0.66)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(250,204,21,0.16)_0%,transparent_30%,transparent_72%,rgba(250,204,21,0.12)_100%)]" />
-      <div className="industrial-grid absolute inset-0 opacity-30" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_18%,rgba(250,204,21,0.14),transparent_30%),linear-gradient(90deg,rgba(9,9,11,0.92)_0%,rgba(9,9,11,0.76)_42%,rgba(9,9,11,0.48)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(250,204,21,0.10)_0%,transparent_34%,transparent_72%,rgba(250,204,21,0.08)_100%)]" />
+      <div className="industrial-grid absolute inset-0 opacity-20" />
 
       <div className="relative mx-auto grid min-h-[88vh] max-w-[1500px] grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 md:py-24 lg:grid-cols-12 lg:gap-10 lg:px-8 xl:px-10">
         <div className="animate-rise lg:col-span-5">
@@ -79,8 +79,8 @@ export const SerfixHero = () => {
           <div className="absolute -right-4 -bottom-4 h-40 w-40 border-2 border-yellow-400 bg-zinc-950/80" />
           <div className="relative border-2 border-yellow-400 bg-zinc-950/95 p-3 shadow-[18px_18px_0px_0px_rgba(250,204,21,0.23)]">
             <img
-              src={BRAND_IMAGES.logoPoster}
-              alt="SERFIX Service Limited logo with hammer, Regina Saskatchewan"
+              src={BRAND_IMAGES.servicePoster}
+              alt="SERFIX Service Limited handyman services poster"
               className="hero-poster-image w-full bg-zinc-950 object-contain object-center"
               data-testid="hero-brand-image"
             />

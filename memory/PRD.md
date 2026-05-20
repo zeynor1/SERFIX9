@@ -58,3 +58,9 @@
 - Kept the image large and fully visible using `object-contain`, preserving important text/details.
 - Removed the small added avatar/logo badge from the hero image.
 - Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
+
+
+## Hero Background Revert
+- Reverted the hero background image back to the previous Regina-themed background.
+- Kept the SERFIX service poster as the main first-page image.
+- Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
