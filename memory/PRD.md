@@ -72,3 +72,10 @@
 - Static export now sends requests directly via EmailJS instead of opening a mailto email draft.
 - Template params include `name`, `phone`, `email`, `service`, `message`, `submitted_at` and common aliases (`from_name`, `user_phone`, etc.) for compatibility.
 - Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
+
+
+## EmailJS Template Variables Alignment
+- User provided EmailJS template screenshot showing variables: `name`, `time`, `message`, `email`.
+- Updated EmailJS payload so `message` contains phone, email, selected service, and user message.
+- `email` uses submitted email when present, otherwise SERFIX contact email as safe fallback for Reply-To.
+- Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.

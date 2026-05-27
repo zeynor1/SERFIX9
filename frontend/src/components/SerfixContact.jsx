@@ -37,6 +37,21 @@ export const ContactSection = () => {
 
     try {
       if (IS_STATIC_EXPORT) {
+        const customerEmail = form.email.trim() || CONTACT.email;
+        const submittedTime = new Date().toLocaleString("en-CA", {
+          timeZone: "America/Regina",
+          dateStyle: "medium",
+          timeStyle: "short",
+        });
+        const fullMessage = [
+          `Phone: ${form.phone}`,
+          `Email: ${form.email.trim() || "Not provided"}`,
+          `Service: ${form.service}`,
+          "",
+          "Message:",
+          form.message,
+        ].join("\n");
+
         await emailjs.send(
           EMAILJS_SERVICE_ID,
           EMAILJS_TEMPLATE_ID,
@@ -46,20 +61,17 @@ export const ContactSection = () => {
             user_name: form.name,
             phone: form.phone,
             user_phone: form.phone,
-            email: form.email || "Not provided",
-            from_email: form.email || "Not provided",
-            user_email: form.email || "Not provided",
+            email: customerEmail,
+            from_email: customerEmail,
+            user_email: customerEmail,
             service: form.service,
             selected_service: form.service,
-            message: form.message,
-            request_message: form.message,
+            message: fullMessage,
+            request_message: fullMessage,
             to_email: CONTACT.email,
             company: "SERFIX Service Limited",
-            submitted_at: new Date().toLocaleString("en-CA", {
-              timeZone: "America/Regina",
-              dateStyle: "medium",
-              timeStyle: "short",
-            }),
+            time: submittedTime,
+            submitted_at: submittedTime,
           },
           {
             publicKey: EMAILJS_PUBLIC_KEY,

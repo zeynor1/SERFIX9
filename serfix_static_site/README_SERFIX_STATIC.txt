@@ -7,6 +7,8 @@ Recommended GitHub Pages settings:
 
 Upload the docs folder to the root of your repository, then select /docs in GitHub Pages settings.
 
-Contact form:
-- Uses EmailJS to send requests directly to the configured SERFIX email.
-- Template variables sent include name, phone, email, service, message, submitted_at and common aliases.
+Contact form uses EmailJS template variables:
+- name
+- time
+- message (contains phone, email, service and message)
+- email
