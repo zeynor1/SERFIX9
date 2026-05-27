@@ -64,3 +64,11 @@
 - Reverted the hero background image back to the previous Regina-themed background.
 - Kept the SERFIX service poster as the main first-page image.
 - Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
+
+
+## EmailJS Integration Update
+- Installed `@emailjs/browser`.
+- Connected static contact form to EmailJS using service ID `service_3fa8cbc`, template ID `template_wmdgw1o`, and provided public key.
+- Static export now sends requests directly via EmailJS instead of opening a mailto email draft.
+- Template params include `name`, `phone`, `email`, `service`, `message`, `submitted_at` and common aliases (`from_name`, `user_phone`, etc.) for compatibility.
+- Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.

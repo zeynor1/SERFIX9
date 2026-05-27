@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import emailjs from "@emailjs/browser";
 import { CalendarCheck, Mail, PhoneCall, Send } from "lucide-react";
 import { toast } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,9 @@ import { CONTACT, SERVICES } from "@/data/serfixContent";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 const IS_STATIC_EXPORT = process.env.REACT_APP_STATIC_EXPORT === "true";
+const EMAILJS_SERVICE_ID = "service_3fa8cbc";
+const EMAILJS_TEMPLATE_ID = "template_wmdgw1o";
+const EMAILJS_PUBLIC_KEY = "kIKX536oWH1mrm4Bu";
 
 const initialForm = {
   name: "",
@@ -33,13 +37,37 @@ export const ContactSection = () => {
 
     try {
       if (IS_STATIC_EXPORT) {
-        const subject = encodeURIComponent(`SERFIX service request: ${form.service}`);
-        const body = encodeURIComponent(
-          `Name: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email || "Not provided"}\nService: ${form.service}\n\nMessage:\n${form.message}`
+        await emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          {
+            name: form.name,
+            from_name: form.name,
+            user_name: form.name,
+            phone: form.phone,
+            user_phone: form.phone,
+            email: form.email || "Not provided",
+            from_email: form.email || "Not provided",
+            user_email: form.email || "Not provided",
+            service: form.service,
+            selected_service: form.service,
+            message: form.message,
+            request_message: form.message,
+            to_email: CONTACT.email,
+            company: "SERFIX Service Limited",
+            submitted_at: new Date().toLocaleString("en-CA", {
+              timeZone: "America/Regina",
+              dateStyle: "medium",
+              timeStyle: "short",
+            }),
+          },
+          {
+            publicKey: EMAILJS_PUBLIC_KEY,
+          }
         );
-        window.location.href = `${CONTACT.mailHref}?subject=${subject}&body=${body}`;
-        toast.success("Email draft opened", {
-          description: "Your request is ready to send to SERFIX.",
+
+        toast.success("Request sent", {
+          description: "Your request was sent directly to SERFIX by email.",
         });
         setForm(initialForm);
         return;
