@@ -69,7 +69,7 @@ export const ContactSection = () => {
             message: fullMessage,
             request_message: fullMessage,
             to_email: CONTACT.email,
-            company: "SERFIX Service Limited",
+            company: "SERFIX Service",
             time: submittedTime,
             submitted_at: submittedTime,
           },

@@ -1,4 +1,4 @@
-SERFIX Service Limited — GitHub Pages Ready
+SERFIX Service — GitHub Pages Ready
 
 Recommended GitHub Pages settings:
 - Source: Deploy from a branch

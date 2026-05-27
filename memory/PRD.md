@@ -1,13 +1,13 @@
-# SERFIX Service Limited Website PRD
+# SERFIX Service Website PRD
 
 ## Original Problem Statement
-Пользователь попросил сделать демо-сайт для SERFIX Service Limited и позже запросил переносимые файлы сайта для самостоятельного хостинга вне Emergent/GitHub root setup.
+Пользователь попросил сделать демо-сайт для SERFIX Service и позже запросил переносимые файлы сайта для самостоятельного хостинга вне Emergent/GitHub root setup.
 
 ## Architecture Decisions
 - Main app: React frontend with FastAPI/MongoDB backend for inquiry storage in the full-stack preview.
 - Static export: portable React production build with relative asset paths (`PUBLIC_URL=.`).
 - Static contact flow: form opens an email draft to `info@serfixservice.com`, so the site works on static hosting without backend.
-- Brand content: SERFIX Service Limited, Regina, Saskatchewan, Local | Reliable | Trusted, services and contacts from supplied images.
+- Brand content: SERFIX Service, Regina, Saskatchewan, Local | Reliable | Trusted, services and contacts from supplied images.
 
 ## Implemented
 - One-page SERFIX promotional website with hero, services, trust/benefits, direct phone/email CTAs, contact form, and footer.
@@ -79,3 +79,10 @@
 - Updated EmailJS payload so `message` contains phone, email, selected service, and user message.
 - `email` uses submitted email when present, otherwise SERFIX contact email as safe fallback for Reply-To.
 - Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
+
+
+## Brand Name and Hero Image Update
+- Replaced first-slide poster with user-provided SERFIX Service image without "Limited".
+- Removed all visible "Limited" wording from frontend, metadata, backend readiness text, design notes, and project memory.
+- Rebuilt `/app/docs`, `/app/serfix_static_site`, and `/app/serfix_github_pages_ready.zip`.
+- Verified exported page contains no visible "Limited" text and uses the new hero image.

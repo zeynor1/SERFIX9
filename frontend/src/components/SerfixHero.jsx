@@ -33,7 +33,7 @@ export const SerfixHero = () => {
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-relaxed text-zinc-300 sm:text-lg" data-testid="hero-subheading">
-            SERFIX Service Limited provides reliable handyman services for homes and businesses in Regina — appliance repair, drywall, painting, doors, fixtures, and general maintenance.
+            SERFIX Service provides reliable handyman services for homes and businesses in Regina — appliance repair, drywall, painting, doors, fixtures, and general maintenance.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row" data-testid="hero-cta-group">
@@ -80,7 +80,7 @@ export const SerfixHero = () => {
           <div className="relative border-2 border-yellow-400 bg-zinc-950/95 p-3 shadow-[18px_18px_0px_0px_rgba(250,204,21,0.23)]">
             <img
               src={BRAND_IMAGES.servicePoster}
-              alt="SERFIX Service Limited handyman services poster"
+              alt="SERFIX Service handyman services poster"
               className="hero-poster-image w-full bg-zinc-950 object-contain object-center"
               data-testid="hero-brand-image"
             />

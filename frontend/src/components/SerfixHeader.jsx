@@ -13,7 +13,7 @@ export const SerfixHeader = () => {
           href="#top"
           className="group flex items-center gap-3"
           data-testid="header-brand-link"
-          aria-label="SERFIX Service Limited home"
+          aria-label="SERFIX Service home"
         >
           <span className="grid h-11 w-11 place-items-center border-2 border-yellow-400 bg-zinc-950 text-yellow-400 transition-transform duration-200 group-hover:-translate-y-0.5">
             <Hammer className="h-6 w-6" strokeWidth={3} />
@@ -23,7 +23,7 @@ export const SerfixHeader = () => {
               SER<span className="text-yellow-400">FIX</span>
             </span>
             <span className="block text-[10px] font-semibold uppercase tracking-[0.28em] text-zinc-400" data-testid="header-brand-tagline">
-              Service Limited
+              Service
             </span>
           </span>
         </a>

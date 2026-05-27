@@ -10,7 +10,7 @@ export const BRAND_IMAGES = {
   logoPoster:
     "https://customer-assets.emergentagent.com/job_firm-preview-2/artifacts/uwebhib0_image.png",
   servicePoster:
-    "https://customer-assets.emergentagent.com/job_firm-preview-2/artifacts/vsy0ohih_image.png",
+    "https://customer-assets.emergentagent.com/job_firm-preview-2/artifacts/leu6vkmp_image.png",
   tools:
     "https://images.unsplash.com/photo-1623161551727-54c918bdcec1?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
   regina:

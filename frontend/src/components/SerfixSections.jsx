@@ -133,7 +133,7 @@ export const FooterSection = () => {
           <p className="font-display text-3xl font-bold uppercase text-zinc-50" data-testid="footer-brand-name">
             SER<span className="text-yellow-400">FIX</span>
           </p>
-          <p className="mt-2 text-sm uppercase tracking-[0.22em]" data-testid="footer-brand-tagline">Service Limited</p>
+          <p className="mt-2 text-sm uppercase tracking-[0.22em]" data-testid="footer-brand-tagline">Service</p>
         </div>
         <div data-testid="footer-service-area-block">
           <p className="font-bold uppercase text-zinc-50" data-testid="footer-service-area-title">Service area</p>
